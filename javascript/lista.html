@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>-
+<body>
+    <script>
+            // Multiplo de 2
+
+        // let minhaLista = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10','11', '12', '13', '14', '15', '16', '17', '18', '19', '20']
+        // let novaLista = minhaLista.filter(function (elemento){
+        //     return elemento % 2 === 0;
+        // });
+        // console.log(novaLista);
+
+            // Multiplo de 5 
+
+        // let minhaLista = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10','11', '12', '13', '14', '15', '16', '17', '18', '19', '20']
+        // let novaLista = minhaLista.filter(function (elemento){
+        //     return elemento % 5 === 0;
+        // });
+        // console.log(novaLista);
+
+            // LETRA COM 5 DIGITOS
+
+        // let minhaLista = ['palavras', 'gelo', 'fogo', 'quadrado', 'letra']
+        // let novaLista = minhaLista.filter(function (elemento){
+        //     return elemento.length > 5;
+        // });
+        // console.log(minhaLista);
+        // console.log(novaLista);
+
+        // var lista = ['palavras', 'gelo', 'fogo', 'quadrado', 'letra']
+        // var cincoletras = []
+
+        // for(var indice = 0; indice < lista.length; indice = indice + 1){
+        //     var maisqueCinco = lista[indice]
+        //     if(maisqueCinco.length > 6) {
+        //         cincoletras.push(lista[indice])
+        //     }
+        // }
+        // console.log(lista)
+        // console.log(cincoletras)
+
+        let minhaLista = [1,2,3,4,5,6,7,8,9,10];
+        let total = minhaLista.reduce(function(acumulado, atual) {
+            return acumulado + atual;
+        });
+        let media = total / minhaLista.length;
+        console.log(total);
+        console.log(media);
+
+        
+    </script>
+</body>
+</html>
