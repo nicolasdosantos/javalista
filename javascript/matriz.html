@@ -75,6 +75,24 @@
         // }
 
         // console.log(novaMatriz)
+
+        var matriz = [
+        [5, 7, 8],
+        [1, 2, 3],
+        [9, 6, 4]
+    ]
+
+        var invertido = []
+
+        for (var linha = 0; linha < matriz.length; linha++) 
+            for (var coluna = 0; coluna < matriz[linha].length; coluna++){
+                invertido.push(matriz[coluna][coluna])
+            }
+            matriz.push(invertido)
+            invertido = []
+
+        console.log(invertido)
+
     </script>
 </body>
 </html>
