@@ -100,26 +100,52 @@
 
         // console.log(novaMatriz)
 
+            // RETORNA A LISTA INVERTIDA
+
+        // matriz = [
+        //     [1,2,3],
+        //     [4,5,6],
+        //     [7,8,9]
+        // ]
+
+        // l1 = 0
+        // l2 = matriz.length - 2
+
+        // invert = []
+
+        // x = matriz.shift()
+        // for(i = 0; i < l2; i++){
+        // invert.push(matriz.shift())
+        // matriz.push(invert.shift())
+        // }
+        //     matriz.push(x)
+        // console.log(matriz)
+
 
         matriz = [
-            [1,2,3],
-            [4,5,6],
-            [7,8,9]
+             [1,2,3],
+             [4,5,6],
+             [7,8, 9]
         ]
+        
+        var maior = 0
+        var menor = matriz[0][0]
 
-        l1 = 0
-        l2 = matriz.length - 2
-
-        invert = []
-
-        x = matriz.shift()
-        for(i = 0; i < l2; i++){
-        invert.push(matriz.shift())
-        matriz.push(invert.shift())
+        for(i= 0; i < matriz.length; i++){
+            for (j= 0; j < matriz[i].length; j++){
+                if(matriz[i][j] > maior){
+                    maior = matriz[i][j]
+                }  
+                else if(matriz[i][j] < menor){
+                    menor = matriz[i][j]
+                }
+            }
         }
-            matriz.push(x)
-        console.log(matriz)
-        // console.log  
+            
+        
+        
+        console.log("Seu maior numero é " + maior)
+        console.log("Seu menor numero é " + menor)
     </script>
 </body>
 </html>
