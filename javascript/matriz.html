@@ -11,7 +11,7 @@
 <body>
     <script>
 
-                            // PRIMEIRA PARTE DA MATRIZ
+        // PRIMEIRA PARTE DA MATRIZ
 
         // var matriz = [
         //     [5, 7, 8], // linha 1
@@ -29,7 +29,7 @@
 
         // console.log(soma)
 
-                         // PARES MULTIPLOS
+        // PARES MULTIPLOS
 
         // var matriz = [
         //     [5, 7, 8], // linha 1
@@ -52,7 +52,7 @@
         // console.log(par)
         // console.log(multiplicacao)
 
-                // LISTA DENTRO DE UMA LISTA 
+        // LISTA DENTRO DE UMA LISTA 
 
         // var matriz = [
         //     [1,2,3],
@@ -76,7 +76,7 @@
 
         // console.log(novaMatriz)
 
-            // NÃO SEI A ATIVIDADE
+        // NÃO SEI A ATIVIDADE
 
         // var matriz = [
         //     [1,2,3],
@@ -100,7 +100,7 @@
 
         // console.log(novaMatriz)
 
-            // RETORNA A LISTA INVERTIDA
+        // RETORNA A LISTA INVERTIDA
 
         // matriz = [
         //     [1,2,3],
@@ -121,31 +121,59 @@
         //     matriz.push(x)
         // console.log(matriz)
 
+        // NUMERO MAIOR E MENOR
+
+        // matriz = [
+        //      [1,2,3],
+        //      [4,5,6],
+        //      [7,8, 9]
+        // ]
+
+        // var maior = 0
+        // var menor = matriz[0][0]
+
+        // for(l= 0; l < matriz.length; l++){
+        //     for (c= 0; c < matriz[l].length; c++){
+        //         if(matriz[l][c] > maior){
+        //             maior = matriz[l][c]
+        //         }  
+        //         else if(matriz[l][c] < menor){
+        //             menor = matriz[l][c]
+        //         }
+        //     }
+        // }
+
+        // console.log("Seu maior numero é " + maior)
+        // console.log("Seu menor numero é " + menor)
 
         matriz = [
-             [1,2,3],
-             [4,5,6],
-             [7,8, 9]
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
+        ]
+
+        matriz2 = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9]
         ]
         
-        var maior = 0
-        var menor = matriz[0][0]
+        iguais = true
 
-        for(i= 0; i < matriz.length; i++){
-            for (j= 0; j < matriz[i].length; j++){
-                if(matriz[i][j] > maior){
-                    maior = matriz[i][j]
-                }  
-                else if(matriz[i][j] < menor){
-                    menor = matriz[i][j]
+        for (l = 0; l < matriz.length; l++) {
+            for (c = 0; c < matriz.length; c++) {
+                if (matriz[l][c] != matriz2[l][c]) {
+                    iguais = false;
+
                 }
             }
         }
-            
-        
-        
-        console.log("Seu maior numero é " + maior)
-        console.log("Seu menor numero é " + menor)
+        if (iguais) {
+            console.log("Todos os numeros da lista são iguais")
+        } else {
+            console.log("Algum numero da sua lista é diferente")
+        }
     </script>
 </body>
+
 </html>
