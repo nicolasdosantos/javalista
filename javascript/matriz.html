@@ -76,23 +76,50 @@
 
         // console.log(novaMatriz)
 
-        var matriz = [
-        [5, 7, 8],
-        [1, 2, 3],
-        [9, 6, 4]
-    ]
+            // NÃO SEI A ATIVIDADE
 
-        var invertido = []
+        // var matriz = [
+        //     [1,2,3],
+        //     [4,5,6],
+        //     [7,8,9]
+        // ]
 
-        for (var linha = 0; linha < matriz.length; linha++) 
-            for (var coluna = 0; coluna < matriz[linha].length; coluna++){
-                invertido.push(matriz[coluna][coluna])
-            }
-            matriz.push(invertido)
-            invertido = []
+        // var n = 10
 
-        console.log(invertido)
+        // var novaMatriz = []
 
+        // for(var linha = 0; linha < matriz.length; linha = linha + 1) {
+        //     var lista = []
+        //     for(var coluna = 0; coluna < matriz[linha].length; coluna++) {
+        //         var multiplica = matriz[coluna][linha]
+        //         lista.push(multiplica)
+        //     }
+
+        //     novaMatriz.push(lista)
+        // }
+
+        // console.log(novaMatriz)
+
+
+        matriz = [
+            [1,2,3],
+            [4,5,6],
+            [7,8,9]
+        ]
+
+        l1 = 0
+        l2 = matriz.length - 2
+
+        invert = []
+
+        x = matriz.shift()
+        for(i = 0; i < l2; i++){
+        invert.push(matriz.shift())
+        matriz.push(invert.shift())
+        }
+            matriz.push(x)
+        console.log(matriz)
+        // console.log  
     </script>
 </body>
 </html>
