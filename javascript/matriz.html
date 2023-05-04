@@ -157,17 +157,23 @@
             [4, 5, 6],
             [7, 8, 9]
         ]
-        
+
         iguais = true
 
         for (l = 0; l < matriz.length; l++) {
             for (c = 0; c < matriz.length; c++) {
                 if (matriz[l][c] != matriz2[l][c]) {
                     iguais = false;
-
+                }else if (matriz.length != matriz2.length){
+                    iguais = false
+                }else if (matriz[c].length != matriz2[c].length){
+                    iguais = false
                 }
             }
         }
+
+       
+
         if (iguais) {
             console.log("Todos os numeros da lista são iguais")
         } else {
