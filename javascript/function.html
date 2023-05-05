@@ -68,20 +68,30 @@
         // adicionar()
         // aparecer()
 
-        function primo(n1) {
-            var x = 0
-            for (var l = 1; l < n1; l++) {
-                if (n1 % l == 0) {
-                    x += 1
-                }
-            }
-        if (x < 2) {
-            console.log("Seu numero é um numero primo")
+        // NUMERO PRIMO 
+
+        //     function primo(n1) {
+        //         var x = 0
+        //         for (var divisão = 2; divisão < n1; divisão++) {
+        //             if (n1 % divisão == 0) {
+        //                 // x += 1
+        //             }
+        //         }
+        //     if (x < 2) {
+        //         console.log("Seu numero é primo")
+        //     }
+        //     else {
+        //         console.log("Seu numero não é primo")
+        //     }
+        // }
+
+        // NUMEROS IMPARES 
+
+        function impares(inicio, fim) {
+            for (var num = inicio; num < fim; num++)
+                if (num % 2 != 0)
+                    console.log(num)
         }
-        else {
-            console.log("Seu numero não é um numero primo")
-        }
-    }
     </script>
 </body>
 
