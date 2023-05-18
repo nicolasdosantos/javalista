@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+</head>
+
+<body>
+    <script>
+        var pessoa = {
+            nome: "Manuel",
+            idade: 23,
+            profissao: "Cozinheiro",
+            endereco: {
+                rua: "nove de julho",
+                cidade: "Birigui",
+                estado: "São Paulo",
+            },
+            apresentacao() {
+                console.log("Olá, meu nome é", pessoa.nome, "eu tenho ", pessoa.idade, "anos e sou um ", pessoa.profissao)
+            },
+            informacao() {
+                console.log ("Moro na rua ",pessoa.endereco.rua, "na cidade ", pessoa.endereco.cidade,"no estado de" , pessoa.endereco.estado)
+
+            },
+            deletar() {
+                delete pessoa.profissao
+            }
+        }
+
+    </script>
+</body>
+
+</html>
